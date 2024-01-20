@@ -4,6 +4,8 @@ function login() {
 
   if ((password === "dog" && username === "toka")) {
     window.location.href = "../index2/index.html";
+  }else if ((password === "21" && username === "astro")) {
+    window.location.href = "../index2/index.html";
   } else {
     alert("كلمة المرور غير صحيحة");
   }
