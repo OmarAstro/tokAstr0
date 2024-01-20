@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/framework.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="crush.css" />
+    <link rel="stylesheet" href="heart.css" />
+    <link rel="stylesheet" href="car.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="p-relative text-c mt-0">Astro</h3>
+        <ul>
+          <li>
+            <a
+              class="active d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head bg-white p-15 between-flex">
+          <div class="search p-relative">
+            <input class="p-10" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icons d-flex align-center">
+            <span class="notification p-relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="astro3.jpg" alt="" />
+          </div>
+        </div>
+        <!-- End Head -->
+        <h1 class="p-relative">Dashboard</h1>
+        <div class="wrapper d-grid gap-20">
+          <!-- Start Welcome Widget -->
+          <div class="welcome bg-white1 rad-10 text-c-mobile block-mobile">
+            <div class="intro p-20 d-flex space-between bg-eee">
+              <div>
+                <h2 class="m-0">Welcome</h2>
+                <p class="c-grey mt-5">Toka</p>
+              </div>
+              <img class="hide-mobile" src="image/welcome.png" alt="" />
+            </div>
+            <img src="astro3.jpg" alt="" class="avatar" />
+            <div class="body text-c d-flex p-20 mt-20 mb-20 block-mobile">
+              <div>
+                Toka Khaled
+                <span class="d-block c-grey fs-14 mt-10">🧡</span>
+              </div>
+              <div>
+                cute <span class="d-block c-grey fs-14 mt-10">156</span>
+              </div>
+              <div>
+                love<span class="d-block c-grey fs-14 mt-10">dog</span>
+              </div>
+            </div>
+            <a
+              href="profile.html"
+              class="visit d-block fs-14 bg-blue c-white w-fit btn-shape"
+              >Profile</a
+            >
+          </div>
+          <!-- End Welcome Widget -->
+          <!-- Start Quick Daft Widget -->
+          <div class="quick-draft p-20 bg-white2 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1 id="car" class="car" style="position: absolute; width: 120px">
+                Click here *-^
+              </h1>
+              <video
+                controls
+                class="card"
+                width="150"
+                height="300"
+                poster="imgs/صافيناز.jpg"
+                
+              >
+                <source
+                  src="../video/رياكشن إيه الحلاوه دي.mp4"
+                  type="video/mp4"
+                />
+                Your Browser Does Not Support Video Tag
+                <track
+                  src="my_file_en.vtt"
+                  kind="subtitles"
+                  srclang="en"
+                  label="English"
+                />
+                <track
+                  src="my_file_it.vtt"
+                  kind="subtitles"
+                  srclang="it"
+                  label="Italian"
+                />
+              </video>
+              <!-- I love you🙄🧡🥀 -->
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Quick Daft Widget -->
+          <!-- Start Targets -->
+          <div class="targets p-20 bg-white1 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1 id="car" class="car" style="position: absolute; width: 120px">
+                Click here *-*
+              </h1>
+              <video
+                controls
+                class="card"
+                width="150"
+                height="300"
+                poster="imgs/صافيناز.jpg"
+                
+              >
+                <source
+                  src="../video/عنك مافهمتي.mp4"
+                  type="video/mp4"
+                />
+                Your Browser Does Not Support Video Tag
+                <track
+                  src="my_file_en.vtt"
+                  kind="subtitles"
+                  srclang="en"
+                  label="English"
+                />
+                <track
+                  src="my_file_it.vtt"
+                  kind="subtitles"
+                  srclang="it"
+                  label="Italian"
+                />
+              </video>
+              <!-- I love you🙄🧡🥀 -->
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Targets -->
+          <!-- Start Ticket Widget3 -->
+          <div class="tickets p-20 bg-white3 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1 id="car" class="car" style="position: absolute; width: 120px">
+                Click here *-*
+              </h1>
+              <video
+                controls
+                class="card"
+                width="150"
+                height="300"
+                poster="imgs/صافيناز.jpg"
+                
+              >
+                <source
+                  src="../video/رياكشن انا اسف.mp4"
+                  type="video/mp4"
+                />
+                Your Browser Does Not Support Video Tag
+                <track
+                  src="my_file_en.vtt"
+                  kind="subtitles"
+                  srclang="en"
+                  label="English"
+                />
+                <track
+                  src="my_file_it.vtt"
+                  kind="subtitles"
+                  srclang="it"
+                  label="Italian"
+                />
+              </video>
+              <!-- I love you🙄🧡🥀 -->
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Ticket Widget -->
+          <!-- Start Latest-news -->
+          <div class="latest-news p-20 bg-white4 rad-10 text-c-mobile">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1 id="car" class="car" style="position: absolute; width: 120px">
+                Click here *-*
+              </h1>
+              <video
+                controls
+                class="card"
+                width="150"
+                height="300"
+                poster="imgs/صافيناز.jpg"
+                
+              >
+                <source
+                  src="../video/رياكشن مدح.mp4"
+                  type="video/mp4"
+                />
+                Your Browser Does Not Support Video Tag
+                <track
+                  src="my_file_en.vtt"
+                  kind="subtitles"
+                  srclang="en"
+                  label="English"
+                />
+                <track
+                  src="my_file_it.vtt"
+                  kind="subtitles"
+                  srclang="it"
+                  label="Italian"
+                />
+              </video>
+              <!-- I love you🙄🧡🥀 -->
+            </div>
+          </div>
+          <div class="heart"></div>
+          <!-- End Latest-news -->
+          <!-- Start Tasks -->
+          <div class="tasks p-20 bg-white5 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1 id="car" class="car" style="position: absolute; width: 120px">
+                Click here *-*
+              </h1>
+              <video
+                controls
+                class="card"
+                width="150"
+                height="300"
+                poster="imgs/صافيناز.jpg"
+                
+              >
+                <source src="../video/مقلتش حاجه انا بقا.mp4" type="video/mp4" />
+                Your Browser Does Not Support Video Tag
+                <track
+                  src="my_file_en.vtt"
+                  kind="subtitles"
+                  srclang="en"
+                  label="English"
+                />
+                <track
+                  src="my_file_it.vtt"
+                  kind="subtitles"
+                  srclang="it"
+                  label="Italian"
+                />
+              </video>
+              <!-- I love you🙄🧡🥀 -->
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Tasks -->
+          <!-- Start Tasks -->
+          <div class="tasks p-20 bg-white5 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1 id="car" class="car" style="position: absolute; width: 120px">
+                Click here *-*
+              </h1>
+              <video
+                controls
+                class="card"
+                width="150"
+                height="300"
+                poster="imgs/صافيناز.jpg"
+                
+              >
+                <source src="../video/حب.mp4" type="video/mp4" />
+                Your Browser Does Not Support Video Tag
+                <track
+                  src="my_file_en.vtt"
+                  kind="subtitles"
+                  srclang="en"
+                  label="English"
+                />
+                <track
+                  src="my_file_it.vtt"
+                  kind="subtitles"
+                  srclang="it"
+                  label="Italian"
+                />
+              </video>
+              <!-- I love you🙄🧡🥀 -->
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Tasks -->
+          <!-- Start Tasks -->
+          <div class="tasks p-20 bg-white5 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1 id="car" class="car" style="position: absolute; width: 120px">
+                Click here *-*
+              </h1>
+              <video
+                controls
+                class="card"
+                width="150"
+                height="300"
+                poster="imgs/صافيناز.jpg"
+                
+              >
+                <source src="../video/بتعدي في حته ان شاء الله لسته الصبح _480p.mp4" type="video/mp4" />
+                Your Browser Does Not Support Video Tag
+                <track
+                  src="my_file_en.vtt"
+                  kind="subtitles"
+                  srclang="en"
+                  label="English"
+                />
+                <track
+                  src="my_file_it.vtt"
+                  kind="subtitles"
+                  srclang="it"
+                  label="Italian"
+                />
+              </video>
+              <!-- I love you🙄🧡🥀 -->
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Tasks -->
+          <!-- Start Text love -->
+          <div class="tasks p-20 bg-white5 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1 id="car1" class="car1" style="position: absolute; width: 120px">
+                Click here *-*
+              </h1>
+              I love your smile
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Text love -->
+          <!-- Start Top Search Wrod Widget -->
+          <div class="search-items p-20 bg-white6 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1
+                id="car1"
+                class="car1"
+                style="position: absolute; width: 120px"
+              >
+              Click here *-*
+              </h1>
+              I love your face
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Top Search Wrod Widget -->
+          <!-- Start Top Search Wrod Widget -->
+          <div class="search-items p-20 bg-white6 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1
+                id="car1"
+                class="car1"
+                style="position: absolute; width: 120px"
+              >
+              Click here *-*
+              </h1>
+              I love your in short
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Top Search Wrod Widget -->
+          <!-- Start Top Search Wrod Widget -->
+          <div class="search-items p-20 bg-white6 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1
+                id="car1"
+                class="car1"
+                style="position: absolute; width: 120px"
+              >
+                Click here *-*
+              </h1>
+              I've loved you since the first time you sent me a message
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Top Search Wrod Widget -->
+          <!-- Start Top Search Wrod Widget -->
+          <div class="search-items p-20 bg-white6 rad-10">
+            <div class="card car text-c-mobile block-mobile hide-mobile">
+              <h1
+                id="car1"
+                class="car1"
+                style="position: absolute; width: 120px"
+              >
+              Click here *-*
+              </h1>
+              I love you🙄🧡🥀
+            </div>
+            <div class="heart"></div>
+          </div>
+          <!-- End Top Search Wrod Widget -->
+          <!-- Start Latest Uploads Widget -->
+          <div
+            style="height: 80px; background: url(astro1.jpg);"
+            class="as latest-uploads p-20 bg-white7 w rad-10"
+          >
+            <a class="a1 btn-shape" href="../index.html">click here *-*</a>
+          </div>
+          <!-- End Latest Uploads Widget -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
