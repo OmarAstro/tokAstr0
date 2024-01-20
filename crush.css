@@ -1,0 +1,169 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 123deg;
+  inherits: false;
+}
+:root {
+  --card-height: 50vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+/* body { */
+/* min-height: 100vh; */
+/* background: #212534; */
+/* display: flex; */
+/* align-items: center; */
+/* flex-direction: column; */
+/* padding-top: 2rem; */
+/* padding-bottom: 2rem; */
+/* box-sizing: border-box; */
+/* } */
+.car {
+  color: rgb(88 199 250 / 100%);
+  /* background: #191c29; */
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: absolute;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.5em;
+  cursor: pointer;
+  font-family: cursive;
+  /* box-shadow: -10px 10px 50px #5dc, 1px 1px 10px rgb(75, 3, 243); */
+}
+#car {
+  width: 10;
+}
+#car:hover {
+  opacity: 0;
+}
+.car::before,
+.car::after {
+  animation: none;
+  opacity: 0;
+}
+.car::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  /* background-image: linear-gradient(var(--rotate), #5dc); */
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+.car::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  /* background-image: linear-gradient(var(--rotate), #5dc); */
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.55 linear infinite;
+}
+.card {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 /0%);
+  cursor: pointer;
+  font-family: cursive;
+  box-shadow: -10px 10px 50px #5dc, 1px 1px 10px rgb(75, 3, 243);
+}
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+  box-shadow: none;
+  transition: box-shadow 0.7s;
+}
+.card::before,
+.card::after {
+  animation: none;
+  opacity: 0;
+}
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(var(--rotate), #5dc);
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(var(--rotate), #5dc);
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.55 linear infinite;
+}
+video {
+  opacity: 0;
+}
+video:hover {
+  opacity: 1;
+}
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+.a1 {
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 40px;
+  right: 30%;
+  left: 30%;
+  font-size: 20px;
+  text-align: center;
+  background: #0075ff;
+  color: #fff;
+}
+.a1:hover {
+  font-size: 22px;
+  box-shadow: 5px 5px 20px #2a3f7a;
+  background: white;
+  color: #5cd;
+}
+@media (max-width: 700px) {
+  .as{
+    padding-bottom: 5px;
+  }
+}
